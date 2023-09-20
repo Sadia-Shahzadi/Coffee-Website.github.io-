@@ -1,0 +1,101 @@
+/* Google Font Family [Roboto] */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Custom Designing  */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 7%;
+    border-bottom: 1px solid  rgb(146, 140, 140);
+}
+.navbar img{
+    width: 6%;
+}
+.navbar ul{
+    text-align: center;
+    flex: 1;
+}
+.navbar ul li{
+    padding: 24px 20px;
+    display: inline-block;
+}
+.navbar ul li a{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+.navbar ul li a:hover, .icons i:hover{
+    color: brown;
+}
+.navbar ul li a::after{
+    content: "";
+    background-color: brown;
+    width: 0;
+    height: 2px;
+    display: block;
+    transition: .5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.icons{
+    margin-right: 40px;
+}
+.icons i{
+    color: white;
+    font-size: 22px;
+    padding: 20px 10px;
+}
+
+.head{
+    background-image: url(coffee-images/coffee\ backgroung.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+    padding-top: 14%;
+    padding-left: 30px;
+    transform: scale(1.0);
+    color: white;
+}
+.head h1{
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    padding-bottom: 30px;
+}
+.head p{
+    color: gainsboro;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 300 !important;
+    margin-bottom: 35px;
+}
+.button{
+    background-color: white;
+    color: black;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.button:hover{
+    padding: 10px 30px;
+    transition: 1s;
+    background-color: brown;
+    color: white;
+}
